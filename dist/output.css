@@ -555,9 +555,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 280px) {
+@media (min-width: 260px) {
   .container {
-    max-width: 280px;
+    max-width: 260px;
   }
 }
 
@@ -1084,7 +1084,7 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-@media (min-width: 280px) {
+@media (min-width: 260px) {
   .xs\:visible {
     visibility: visible;
   }
