@@ -30,6 +30,10 @@ module.exports = {
         fadeIn: {
           '0%': { opacity: 0},
           '100%': { opacity: 1},      
+        },
+        translateYBotToTop: {
+          '0%': { transform: 'translateY(0)', scale: 1},
+          '100%': { transform: 'translateY(-100%)', scale: 1.2},
         }
       },
       animation: {
@@ -37,7 +41,8 @@ module.exports = {
         'textFallnFade': 'translateYandFade 3s',
         'textFallnFadeFast': 'translateYandFade 1.5s',
         'translateFromRight': 'translateFromRight 1.5s',
-        'fadeIn': 'fadeIn 2s'
+        'fadeIn': 'fadeIn 2s',
+        'textGrow&Scale': 'translateYBotToTop forwards ease-in-out 1.5s'
       },
     },
   },
