@@ -40,7 +40,7 @@ module.exports = {
         'divGrowRight': 'growDiv .4s linear',
         'textFallnFade': 'translateYandFade 3s',
         'textFallnFadeFast': 'translateYandFade 1.5s',
-        'translateFromRight': 'translateFromRight 1.5s',
+        'translateFromRight': 'translateFromRight 1s',
         'fadeIn': 'fadeIn 2s',
         'textGrow&Scale': 'translateYBotToTop forwards ease-in-out 1.5s'
       },
