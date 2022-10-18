@@ -10,8 +10,9 @@
 </head>
 <body class="font-normal bg-gradient-to-b from-purple-500 to-pink-300">
 <!-- JS Tailwind -->
-<!-- <div class="hidden xs:block"></div> -->
-  
+<div class="hidden xs:block xs:visible"></div>
+<!-- I think I only need this on one html page... -->
+
     <!-- Navbar -->
     <section class="bg-gradient-to-b from-purple-600 to-purple-500">
     <nav class="relative container mx-auto p-2">
@@ -21,7 +22,7 @@
           <div class="pt-2">
             <!-- <img src="img/logo.svg" alt="" /> Perhaps I'll find a logo, or make one --> 
             <h1 class="font-bold text-5xl text-white p-2 rounded-full">
-              <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
+                <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
             </h1>
           </div>
           <!-- Menu Items -->
@@ -60,13 +61,47 @@
               <a href="donate.html" class="text-sm hover:text-purple-300">Donate</a>
             </div>
           </div>
+        </div>
+  
+        <!-- Mobile Menu -->
     </nav>
     </section>
 
-    <!-- Donations -->
-    <section class="container mx-auto">
-        <h1 class="text-4xl">Hey donate to us lol.</h1>
+
+    <!-- First section  -->
+    <section class="mx-auto container relative p-2">
+        <div class="p-2">
+          <h1 class="text-3xl text-left text-white py-4 max-w-lg md:text-4xl xl:text-5xl">
+            What do we do?
+          </h1>
+          <p class="text-xl text-left text-white py-6 max-w-lg md:text-2xl xl:text-3xl">
+            We bring our community together, and plan fun, engaging events.
+          </p>
+          <div class="flex flex-col items-center justify-evenly space-x-4 p-2 space-y-4 sm:flex-row">
+            <div>
+              <img src="img/bsv_event2.png" alt="" class="drop-shadow-2xl shadow-pink-600">
+            </div>
+            <div>
+              <img src="img/bsv_event.png" alt="" class="drop-shadow-2xl shadow-pink-600">
+            </div>
+            <div>
+              <img src="img/bsv_event3.png" alt="" class="drop-shadow-2xl shadow-pink-600">
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-center mx-auto p-2">
+          <!-- Takes us to gallery -->
+          <a href="gallery.html" class="hover:text-purple-300"><i class="fa-solid fa-images fa-3x"></i></a>
+        </div>
     </section>
+
+    <!-- <section class="mx-auto xl:px-52 py-8 bg-gradient-to-b from-purple-500 to-purple-300 ">
+      <div class="">
+        <h1 class="text-4xl">Want to lend a hand?</h1>
+      </div>
+    </section> -->
+
+    
     <!-- Footer -->
     <footer class="bg-gradient-to-b from-pink-300 to-purple-500">
             <!-- Everything contained inside of a div. -->
@@ -74,9 +109,9 @@
               <!-- first row with logo/community, with links to all the pages -->
               <div class="flex flex-row justify-between ">
                 <div class="py-8">
-                  <h1 class="font-bold text-5xl text-white p-2 rounded-full">
-                    <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
-                  </h1>
+                    <h1 class="font-bold text-5xl text-white p-2 rounded-full">
+                        <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
+                    </h1>
                 </div>
                 <div class=" flex flex-col text-white">
                   <a href="about.html" class="hover:text-purple-300 relative">About Us</a>
