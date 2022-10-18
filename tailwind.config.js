@@ -43,16 +43,20 @@ module.exports = {
           '0%': { transform: 'translateY(0)', scale: 1},
           '100%': { transform: 'translateY(-100%)', scale: 1.2},
         },
-
+        fadeInSlow: {
+          '0%': { opacity: 0},
+          '100%': { opacity: 1},      
+        },
       },
       animation: {
         'divGrowRight': 'growDiv .4s linear',
-        'divGrowFromMidToRight': 'growDivMidTRight 1.5s linear',
-        'divGrowFromMidToLeft': 'growDivMidTLeft 1.5s linear',
+        'divGrowFromMidToRight': 'growDivMidTRight 1s linear',
+        'divGrowFromMidToLeft': 'growDivMidTLeft 1s linear',
         'textFallnFade': 'translateYandFade 3s',
         'textFallnFadeFast': 'translateYandFade 1.5s',
         'translateFromRight': 'translateFromRight 1s',
         'fadeIn': 'fadeIn 2s',
+        'fadeInSlow': 'fadeInSlow 4s',
         'textGrow&Scale': 'translateYBotToTop forwards ease-in-out 1.5s',
 
       },
