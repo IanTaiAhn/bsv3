@@ -66,18 +66,17 @@
     <!-- Animation idea, have the two side cards slide in from
     the left and right side, while the one in the middle slides in from the bottom. -->
     <!-- Also fade the text in. -->
-    <section class="container mx-auto m-8">
+    <section class="container mx-auto m-8 animate-fadeIn">
       <div class="bg-pink-300 shadow-md shadow-pink-300">
         <h1 class="md:text-4xl text-2xl text-white text-center p-4">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat numquam perspiciatis 
           quo vitae ab aliquid?
         </h1>
-        <div class="p-10 flex md:flex-row flex-col space-x-10 space-y-10 align-middle justify-center">
+        <div class="p-10 flex sm:flex-row sm:space-x-10 sm:space-y-0 flex-col space-y-10 justify-center">
           <!-- Well this works for some reason? -->
-          <div></div>
+          <!-- <div></div> -->
           <div class="border-2 border-pink-400">
-            <!-- <h2 class="w-80 h-72 text-center">More donation stuff</h2> -->
-            <img src="img/venmo.png" alt="" class="">
+            <img src="img/venmo.png" alt="" class="object-scale-down">
           </div>
           <div class="overflow-hidden border-2 border-pink-400">
             <img src="img/venmo.png" alt="" class="">
