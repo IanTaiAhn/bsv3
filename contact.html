@@ -10,8 +10,9 @@
 </head>
 <body class="font-normal bg-pink-100">
 <!-- JS Tailwind -->
-<!-- <div class="hidden xs:block"></div> -->
-  
+<div class="hidden xs:block xs:visible"></div>
+<!-- I think I only need this on one html page... -->
+
     <!-- Navbar -->
     <section class="bg-gradient-to-b from-pink-500 to-pink-400">
     <nav class="relative container mx-auto p-2">
@@ -21,7 +22,7 @@
           <div class="pt-2">
             <!-- <img src="img/logo.svg" alt="" /> Perhaps I'll find a logo, or make one --> 
             <h1 class="font-bold text-5xl text-white p-2 rounded-full">
-              <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
+                <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
             </h1>
           </div>
           <!-- Menu Items -->
@@ -31,9 +32,9 @@
               <span class="bg-yellow-300 absolute left-0 -bottom-1 w-0 h-1 transition-all group-hover:w-full"></span>
             </a>
             <a href="contact.html" class="hover:text-purple-300 group relative">
-              Contact
-              <span class="bg-yellow-300 absolute left-0 -bottom-1 w-0 h-1 transition-all group-hover:w-full"></span>
-            </a>
+                Contact
+                <span class="bg-yellow-300 absolute left-0 -bottom-1 w-0 h-1 transition-all group-hover:w-full"></span>
+              </a>
             <a href="gallery.html" class="hover:text-purple-300 group relative">Gallery
               <span class="bg-yellow-300 absolute left-0 -bottom-1 w-0 h-1 transition-all group-hover:w-full"></span>
             </a>
@@ -49,54 +50,39 @@
           </div>
   
           <!-- Hamburger Icon -->
-          <div class="relative m-2 md:hidden" >
+          <div class="relative m-2  md:hidden" >
             <i class="fa-solid fa-bars fa-2x cursor-pointer" id="menu"></i>
             <!-- Actual menu -->
-              <div class="container flex justify-center fixed top-20 -left-full w-0 h-screen transition-all ease-in duration-300 bg-pink-400 z-10">
-                <div class="flex flex-col pt-4 space-y-5 text-2xl text-white">
-                  <a href="about.html" class="hover:text-pink-300">About</a>
-                  <a href="contact.html" class="hover:text-pink-300">Contact</a>
-                  <a href="gallery.html" class="hover:text-pink-300">Gallery</a>
-                  <a href="events.html" class="hover:text-pink-300">Events</a>
-                  <a href="community.html" class="hover:text-pink-300">Community</a>
-                  <a href="donate.html" class="hover:text-pink-300">Donate</a>
-                </div>
+            <div class="container flex justify-center fixed top-20 -left-full w-0 h-screen transition-all ease-in duration-300 bg-pink-400 z-10">
+              <div class="flex flex-col pt-4 space-y-5 text-2xl text-white">
+                <a href="about.html" class="hover:text-pink-300">About</a>
+                <a href="contact.html" class="hover:text-pink-300">Contact</a>
+                <a href="gallery.html" class="hover:text-pink-300">Gallery</a>
+                <a href="events.html" class="hover:text-pink-300">Events</a>
+                <a href="community.html" class="hover:text-pink-300">Community</a>
+                <a href="donate.html" class="hover:text-pink-300">Donate</a>
               </div>
+            </div>
           </div>
         </div>
+  
+        <!-- Mobile Menu -->
     </nav>
     </section>
-<!-- <div class="text-4xl text-pink-400"></div> -->
-    <!-- Donations -->
 
-    <!-- Animation idea, have the two side cards slide in from
-    the left and right side, while the one in the middle slides in from the bottom. -->
-    <!-- Also fade the text in. -->
-    <section class="container mx-auto m-8 animate-fadeIn">
-      <div class="bg-pink-300 shadow-md shadow-pink-300">
-        <h1 class="md:text-4xl text-2xl text-white text-center p-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat numquam perspiciatis 
-          quo vitae ab aliquid?
-        </h1>
-        <div class="p-10 flex sm:flex-row sm:space-x-10 sm:space-y-0 flex-col space-y-10 justify-center">
-          <!-- Well this works for some reason? -->
-          <!-- <div></div> -->
-          <div class="border-2 border-pink-400">
-            <!-- venmo -->
-            <img src="img/venmo.png" alt="" class="object-scale-down">
-          </div>
-          <div class="overflow-hidden border-2 border-pink-400">
-            <!-- cashapp -->
-            <img src="img/venmo.png" alt="" class="">
-          </div>
-          <div class="overflow-hidden border-2 border-pink-400">
-            <!-- paypal -->
-            <img src="img/venmo.png" alt="" class="">
-          </div>
+
+    <section class="container mx-auto m-4 animate-fadeIn">
+        <h1 class="text-3xl text-pink-700 md:text-5xl text-center p-4">Contact Us!</h1>
+        <div class="bg-pink-300 rounded-lg shadow-md shadow-pink-300 flex flex-row justify-center p-14">
+            <div class="flex flex-col space-y-12 items-center md:space-y-20 md:text-4xl text-2xl p-4">
+                  <a href="https://discord.com/invite/Rd3TN9MnPp" class="hover:text-pink-500 transition-all hover:animate-bounce"><i class="fa-brands fa-discord fa-2xl "></i></a>
+                  <a href="https://www.instagram.com/thabsve/" class="hover:text-pink-500 transition-all hover:animate-bounce"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                  <a href="https://www.facebook.com/ThaBSVE" class="hover:text-pink-500 transition-all hover:animate-bounce"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                  <!-- TODO mailto: bsv-email... -->
+                  <a href="" class="hover:text-pink-500 transition-all hover:animate-bounce"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- We are in a research phase for this page! -->
+      </section>
     
     <!-- Footer -->
     <footer class="bg-gradient-to-b from-pink-400 to-pink-500">
@@ -105,9 +91,9 @@
               <!-- first row with logo/community, with links to all the pages -->
               <div class="flex flex-row justify-between ">
                 <div class="py-8">
-                  <h1 class="font-bold text-5xl text-white p-2 rounded-full">
-                    <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
-                  </h1>
+                    <h1 class="font-bold text-5xl text-white p-2 rounded-full">
+                        <a href="index.html" class="hover:text-purple-300 group relative">BSV</a>
+                    </h1>
                 </div>
                 <div class=" flex flex-col text-white">
                   <a href="about.html" class="hover:text-purple-300 relative">About Us</a>
