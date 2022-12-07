@@ -1423,6 +1423,11 @@ video {
     bottom: 66.666667%;
   }
 
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .sm\:inline {
     display: inline;
   }
