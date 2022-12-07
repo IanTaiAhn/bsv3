@@ -555,12 +555,6 @@ video {
   width: 100%;
 }
 
-@media (min-width: 260px) {
-  .container {
-    max-width: 260px;
-  }
-}
-
 @media (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -1408,24 +1402,9 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-@media (min-width: 260px) {
-  .xs\:visible {
-    visibility: visible;
-  }
-
-  .xs\:block {
-    display: block;
-  }
-}
-
 @media (min-width: 480px) {
   .sm\:bottom-2\/3 {
     bottom: 66.666667%;
-  }
-
-  .sm\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .sm\:inline {
